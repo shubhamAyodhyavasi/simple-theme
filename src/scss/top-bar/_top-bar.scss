@@ -1,0 +1,15 @@
+// top bar
+
+.c-top-bar{
+    width: 100%;
+    display: block;
+    background-color: $light;
+    &__inner{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        display: flex;
+        justify-content: flex-end;
+        @include make-container();
+        @include make-container-max-widths();
+    }
+}

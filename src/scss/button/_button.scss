@@ -1,0 +1,15 @@
+// button 
+.c-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    @include button-variant($background: $primary, $border: $primary, );
+    font-size: 24px;
+    font-weight: bold;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+}

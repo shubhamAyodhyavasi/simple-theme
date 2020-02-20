@@ -1,0 +1,16 @@
+.c-section{
+    @each $key, $val in $section-padding {
+        @include media-breakpoint-up($key, $grid-breakpoints) {
+            padding-top: $val;
+            padding-bottom: $val;
+        }
+    }
+    &--parallax{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    &--bg-light{
+        background-color: $light;
+    }
+}

@@ -1,0 +1,42 @@
+// hero
+.c-hero{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &__bg{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        @include make-container();
+        @include make-container-max-widths();
+    }
+    &__title{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+    &__btn{
+        margin-right: 30px;
+    }
+    // versions
+    &--default{
+        .c-hero{
+            &__inner{
+                height: $hero-size;
+            }
+        }
+    }
+}

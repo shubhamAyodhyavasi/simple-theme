@@ -1,0 +1,51 @@
+// faq
+.c-faq{
+    &__content-wrapper{
+        display: none;
+    }
+    &__title-wrapper{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &--active{
+            .c-faq{
+                &__icon{
+                    &:before{
+                        transform: rotate(90deg);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__icon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        &:after, &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: currentColor;
+            transition: $base-transition;
+        }
+        &:after{
+            width: 100%;
+            height: 3px;
+        }
+        &:before{
+            width: 3px;
+            height: 100%;
+        }
+    }
+}

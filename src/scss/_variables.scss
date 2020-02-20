@@ -1,0 +1,58 @@
+$light: #f2f2f2;
+$primary: #1563ff;
+// $text-dark: #000000;
+$text-dark: #000000;
+
+// 
+$hero-size: 700px;
+$large-container-width: 1645px;
+// 
+$base-transition: all .4s;
+
+$font-family-base: "SegoeUI", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// 
+$font-size-root: 18px;
+
+$image-border-radius: (
+    xxs: 10px,
+    xs: 15px,
+    // sm: 15px,
+    md: 20px,
+    // lg: 20px,
+    xl: 30px,
+    // xxl: 30px,
+    // xxxl: 30px
+);
+
+$section-padding: (
+    xxs: 35px,
+    // xs: 35px,
+    sm: 50px,
+    // md: 50px,
+    lg: 80px,
+    // xl: 80px,
+    xxl: 100px,
+    // xxxl: 100px
+);
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+  xxxl: 1800px
+);
+
+$container-max-widths: (
+  xs: 375px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1360px,
+  xxxl: 1640px
+) !default;

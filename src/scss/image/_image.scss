@@ -1,0 +1,7 @@
+.c-image{
+    @each $key, $val in $image-border-radius {
+        @include media-breakpoint-up($key, $grid-breakpoints) {
+            border-radius: $val;
+        }
+    }
+}
