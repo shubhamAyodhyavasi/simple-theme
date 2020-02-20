@@ -26,5 +26,20 @@
     &__wrapper{
         position: relative;
         margin: 0 140px;
+        @media (max-width: 1200px){
+            margin: 0 20px;
+        }
+    }
+    @media (max-width: 1200px){
+        width: 180px;
+        height: 180px;
+    }
+    @media (max-width: 991px){
+        width: 100px;
+        height: 100px;
+    }
+    @media (max-width: 480px){
+        width: 90px;
+        height: 90px;
     }
 }

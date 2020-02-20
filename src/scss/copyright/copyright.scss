@@ -1,0 +1,32 @@
+.c-copyright{
+    padding: 15px 0px;
+    @media (max-width:768px){
+        text-align: center;
+    }
+}
+.copyright_text > p{
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.social_connect > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social_connect{
+    text-align: right;
+    @media (max-width:768px){
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.social_connect > ul > li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+@media (max-width: 768px){
+    .c-copyright .justify-content-between{
+        flex-direction: column;
+    }
+}

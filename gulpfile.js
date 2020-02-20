@@ -29,7 +29,9 @@ gulp.task('default', ['sass', 'babel'], () => {
 });
 
 gulp.task('sass', () => {
-    const plugins = [autoprefixer({browsers: ['last 2 versions']}), cssnano()];
+    const plugins = [autoprefixer({browsers: ['last 2 versions']}), 
+    cssnano()
+];
     return gulp.src('./src/scss/**/*.scss')
         .pipe(sass({
             includePaths: ['node_modules']

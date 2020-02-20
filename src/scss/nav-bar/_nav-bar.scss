@@ -5,12 +5,28 @@
         display: block;
         @include make-container();
         @include make-container-max-widths();
+        @media (max-width: 768px){
+            position: fixed;
+            top: 0;
+            left: -280px;
+            bottom: 0;
+            z-index: 999;
+            width: 280px;
+            background-color: darken($color: #000000, $amount: 0);
+            transition: all 0.3s ease-in-out;
+        }
+        &--active{
+            left: 0;
+        }
     }
     &__list{
         display: flex;
         justify-content: flex-end;
         padding: 0;
         margin: 0;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
     }
     &__item{
         display: block;
@@ -28,6 +44,9 @@
         &--active{
             color: $primary;
         }
+        @media (max-width: 768px){
+            padding: 0;
+        }
     }
     &__link{
         display: block;
@@ -38,5 +57,22 @@
         &:hover{
             text-decoration: none;
         }
+        @media (max-width: 768px){
+            color: #ffffff;
+        }
     }
+    @media (max-width: 768px){
+        position: relative;
+        text-align: right;
+        padding: 10px 10px;   
+    }
+    .menu_toggle{
+        display: none;
+        cursor: pointer;
+        @media (max-width: 768px){
+            display: inline-block;   
+        }
+    }
+
+    
 }

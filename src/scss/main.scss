@@ -2,6 +2,7 @@
 @import "./variables";
 // libs
 @import "bootstrap/scss/bootstrap";
+@import "swiper/swiper";
 
 // util components
 @import "./button/button";
@@ -9,6 +10,12 @@
 @import "./image/image";
 @import "./title/title";
 @import "./faq/faq";
+@import "./testimonial/testimonial";
+@import "./photoslider/photoslider";
+@import "./photogallery/photogallery";
+@import "./contact/contact";
+@import "./footer/footer";
+@import "./copyright/copyright";
 // section components
 @import "./section/section";
 @import "./top-bar/top-bar";

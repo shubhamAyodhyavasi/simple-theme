@@ -1,0 +1,33 @@
+//testimonial
+.rel-section{
+    position: relative;
+}
+.testimonial_wrapper .testimonial_slider_wrapper{
+    margin-bottom: 30px;
+}
+.testimonial_slider_block {
+    text-align: center;
+}
+.testimonial_slider_block .testimonial_image{
+    margin-bottom: 20px;
+}
+.testimonial_slider_block .testimonial_image img{
+    border-radius: 50%;
+    max-width: 322px;
+    max-height: 322px;
+    border: 1px solid #707070;
+    @media (max-width: 580px){
+        max-width: 100%;
+    }
+}
+.testimonial_message{
+    padding: 0px 20px;
+}
+.testimonial_message p{
+    font-size: 18px;
+}
+.testimonial_name{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}

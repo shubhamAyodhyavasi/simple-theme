@@ -1,4 +1,7 @@
 .c-title{
     font-size: 90px;
     padding-top: 60px;
+    @media (max-width: 991px){
+        font-size: 60px;
+    }
 }
